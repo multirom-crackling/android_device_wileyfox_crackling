@@ -65,3 +65,23 @@ TW_THEME := portrait_hdpi
 # Encryption support
 TW_INCLUDE_CRYPTO := true
 TARGET_HW_DISK_ENCRYPTION := true
+
+#Still needed by multirom boot menu
+DEVICE_RESOLUTION := 720x1280
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
+
+#MultiROM config. MultiROM also uses parts of TWRP config
+MR_CONTINUOUS_FB_UPDATE := true
+MR_DEV_BLOCK_BOOTDEVICE := true
+MR_NO_KEXEC := enabled
+MR_DPI := hdpi
+MR_DPI_FONT := 192
+MR_FSTAB := device/wileyfox/crackling/multirom/mrom.fstab
+MR_INIT_DEVICES := device/wileyfox/crackling/multirom/mr_init_devices.c
+MR_INPUT_TYPE := type_b
+MR_KEXEC_MEM_MIN := 0x0
+MR_KEXEC_DTB := true
+MR_PIXEL_FORMAT := "ABGR_8888"
+MR_USE_MROM_FSTAB := true
+TARGET_RECOVERY_IS_MULTIROM := true
