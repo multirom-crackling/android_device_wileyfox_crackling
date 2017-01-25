@@ -70,6 +70,10 @@ DEVICE_RESOLUTION := 720x1280
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 
+# MultiROM Recovery Version
+MR_REC_VERSION := $(shell date -u +%Y%m%d)
+BOARD_MKBOOTIMG_ARGS += --board mrom$(MR_REC_VERSION)-00
+
 #MultiROM config. MultiROM also uses parts of TWRP config
 MR_CONTINUOUS_FB_UPDATE := true
 MR_DEV_BLOCK_BOOTDEVICE := true
