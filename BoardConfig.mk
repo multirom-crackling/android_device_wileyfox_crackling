@@ -75,6 +75,7 @@ MR_REC_VERSION := $(shell date -u +%Y%m%d)
 BOARD_MKBOOTIMG_ARGS += --board mrom$(MR_REC_VERSION)-00
 
 #MultiROM config. MultiROM also uses parts of TWRP config
+MR_DEVICE_SPECIFIC_VERSION := a
 MR_CONTINUOUS_FB_UPDATE := true
 MR_DEV_BLOCK_BOOTDEVICE := true
 MR_NO_KEXEC := enabled
