@@ -30,11 +30,13 @@ const char *mr_init_devices[] =
     "/sys/devices/soc.0/7824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p1", // firmware
 
     //sdcard
-    "/sys/devices/soc.0/7864900.sdhci/mmc_host/mmc1",
-    "/sys/devices/soc.0/7864900.sdhci/mmc_host/mmc1/mmc1:0007",
-    "/sys/devices/soc.0/7864900.sdhci/mmc_host/mmc1/mmc1:0007/block/mmcblk1",
-    "/sys/devices/soc.0/7864900.sdhci/mmc_host/mmc1/mmc1:0007/block/mmcblk1*",
+    //"/sys/devices/soc.0/7864900.sdhci/mmc_host/mmc1",
+    //"/sys/devices/soc.0/7864900.sdhci/mmc_host/mmc1/mmc1:0007",
+    //"/sys/devices/soc.0/7864900.sdhci/mmc_host/mmc1/mmc1:0007/block/mmcblk1",
+    //"/sys/devices/soc.0/7864900.sdhci/mmc_host/mmc1/mmc1:0007/block/mmcblk1*",
     "/sys/block/mmcblk1",
+    "/sys/block/mmcblk1/mmcblk1p1",
+    "/sys/block/mmcblk1/mmcblk1p2",
 
     "/sys/bus/mmc",
     "/sys/bus/mmc/drivers/mmcblk",
